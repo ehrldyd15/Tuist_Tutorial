@@ -18,6 +18,14 @@ tuist init --platform ios --template swiftui   // SwiftUI
 
 tuist edit
 
+## [tree 확인]
+
+tree .
+
+tree가 설치되어있지 않다면
+
+brew install tree
+
 ## [프로젝트 생성]
 
 tuist generate
