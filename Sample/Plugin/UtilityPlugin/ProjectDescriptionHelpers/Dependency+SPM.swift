@@ -2,8 +2,6 @@ import ProjectDescription
 
 // MARK: Tuist SPM
 
-import ProjectDescription
-
 public extension TargetDependency {
     enum SPM {}
 }

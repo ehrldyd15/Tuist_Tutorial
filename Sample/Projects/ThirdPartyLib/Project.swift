@@ -1,5 +1,6 @@
 import ProjectDescription
 import ProjectDescriptionHelpers
+import UtilityPlugin
 
 
 // MARK: Swift Package Manager
@@ -26,13 +27,25 @@ import ProjectDescriptionHelpers
 //)
 
 // ✅ [Project.swift]
+//let project = Project.makeModule(
+//    name: "ThirdPartyLib",
+//    product: .framework,
+//    packages: [],
+//    dependencies: [
+//        .external(name: "RxSwift"),
+//        .external(name: "RxCocoa")
+//    ]
+//)
+
+
 let project = Project.makeModule(
     name: "ThirdPartyLib",
     product: .framework,
     packages: [],
     dependencies: [
-        .external(name: "RxSwift"),
-        .external(name: "RxCocoa")
+        .SPM.RxSwift,
+        .SPM.RxCocoa,
+        .SPM.RxRelay
     ]
 )
 

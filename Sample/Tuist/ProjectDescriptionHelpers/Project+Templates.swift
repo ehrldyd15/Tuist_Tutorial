@@ -19,7 +19,7 @@ public extension Project {
                 .debug(name: .debug),
                 .release(name: .release)
             ], defaultSettings: .recommended)
-
+        
         let appTarget = Target(
             name: name,
             platform: platform,
